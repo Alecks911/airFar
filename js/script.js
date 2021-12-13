@@ -160,7 +160,7 @@ document.getElementById('menu-close').addEventListener('click', function () {
 });
 
 // Temperature on city cards
-
+// Not sure how to make the 2 functions below work as a loop....
 // ---------- V1 Function - works
 
 window.addEventListener("load", handleWeatherRequest);
@@ -181,6 +181,23 @@ async function handleWeatherRequest(event) {
     document.querySelector("#weather-result").innerText = `${readableTemp}°C`;
 }
 
+window.addEventListener("load", handleWeatherRequest1);
+
+async function handleWeatherRequest1(event) {
+    event.preventDefault();
+
+    const city1 = document.getElementById("weather-city1").innerText;
+
+    const urlString1 = `https://api.openweathermap.org/data/2.5/weather?q=${city1}&APPID=870b1b10b58578f725b70b13aff6c357`;
+
+    const response1 = await fetch(urlString1);
+
+    const data1 = await response1.json();
+
+    const readableTemp1 = (data1.main.temp - 273.15).toFixed(1);
+
+    document.querySelector("#weather-result1").innerText = `${readableTemp1}°C`;
+}
 
 
 //Objects 
