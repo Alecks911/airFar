@@ -98,7 +98,8 @@ nav {
 /* =================== Hero area styling =================== */
 .hero-container {
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0)), url(../img/hero.webp);
-    height: 420px;
+    /* height: 420px; */
+    height: 45vh;
     background-size: cover;
     background-position: center;
     color: #FFF;
@@ -106,13 +107,7 @@ nav {
 
 @media (max-width: 960px) {
     .hero-container {
-        height: 350px;
-    }
-}
-
-@media (max-width: 768px) {
-    .hero-container {
-        height: 300px;
+        height: 40vh;
     }
 }
 
@@ -136,7 +131,7 @@ nav {
 
 @media (max-width: 960px) {
     .hero-copy {
-        padding: 50px 50px;
+        padding: 70px 50px;
     }
 }
 
