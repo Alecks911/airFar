@@ -161,8 +161,6 @@ document.getElementById('menu-close').addEventListener('click', function () {
 
 // Temperature on city cards
 
-
-
 window.addEventListener("load", handleWeatherRequest);
 
 async function handleWeatherRequest(event) {
