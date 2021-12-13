@@ -161,6 +161,8 @@ document.getElementById('menu-close').addEventListener('click', function () {
 
 // Temperature on city cards
 
+// ---------- V1 Function - works
+
 window.addEventListener("load", handleWeatherRequest);
 
 async function handleWeatherRequest(event) {
@@ -178,6 +180,7 @@ async function handleWeatherRequest(event) {
 
     document.querySelector("#weather-result").innerText = `${readableTemp}°C`;
 }
+
 
 
 //Objects 
